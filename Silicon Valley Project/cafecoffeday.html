@@ -1,0 +1,226 @@
+
+        <html>
+        <head>
+        <title>CafeCoffeDay</title>
+        <style type="text/css">
+        select,input
+        {
+            width:160px;
+        }
+        button
+        {
+            width:80;
+        }
+        </style>
+        <script type="text/javascript">
+        function Teas(obj)
+        {
+            var input = document.getElementById('RsTea');
+                        input.value = obj.value;
+        }
+        function Extra(obj2)
+        {
+            var input2 = document.getElementById('RsExtras');
+                        input2.value = obj2.value;
+        }
+        function Quantity(obj3)
+        {
+            var input3 = document.getElementById('RsQuantitys');
+                        input3.value = obj3.value;
+        }
+        function Totalis()
+        {
+            var Tea=document.getElementById('RsTea').value;
+                  var Hot=document.getElementById('RsExtras').value;
+            var Quant=document.getElementById('RsQuantitys').value;
+                  var tot = eval(Tea) + eval(Hot);
+            var bill = eval(tot) * eval(Quant);
+            document.getElementById('bill').value=bill;
+        }
+        </script>
+        </head>
+        <body bgcolor="cyan"><html>
+<head>
+<title>CafeCoffeDay</title>
+<style type="text/css">
+select,input
+{
+	width:160px;
+}
+button
+{
+	width:80;
+}
+</style>
+<script type="text/javascript">
+function Teas(obj)
+{
+	var input = document.getElementById('RsTea');
+            	input.value = obj.value;
+}
+function Extra(obj2)
+{
+	var input2 = document.getElementById('RsExtras');
+            	input2.value = obj2.value;
+}
+function Quantity(obj3)
+{
+	var input3 = document.getElementById('RsQuantitys');
+            	input3.value = obj3.value;
+}
+function Totalis()
+{
+	var Tea=document.getElementById('RsTea').value;
+      	var Hot=document.getElementById('RsExtras').value;
+	var Quant=document.getElementById('RsQuantitys').value;
+      	var tot = eval(Tea) + eval(Hot);
+	var bill = eval(tot) * eval(Quant);
+	document.getElementById('bill').value=bill;
+}
+</script>
+</head>
+<body bg="C:\Users\Lenovo pc\Desktop\Falak\Silicon Valley Project">
+<form action="" method="">
+<table align="center" bordercolor="white">
+<tr><td><center>
+<font color="white" size="10">
+CafeCoffeDay
+</font>
+</center></td></tr>
+<tr>
+<td><hr color="White"></td>
+</tr>
+<tr><td>
+<center>
+<input type="hidden" id="RsTea" name="Tea" size="10">
+<select id="RsTea" name="RsTea" onchange="Teas(this)">
+	<option value="">-- SELECT --  -- Rs.  --</option>
+	<option value="35">MASALA-TEA | Rs.35 |</option>
+        	<option value="50">BLACK-TEA | Rs.50 |</option>
+        	<option value="70">LAMON-TEA | Rs.70 |</option>
+        	<option value="65">GREEN-TEA | Rs.65 |</option>
+	<option value="60">COFFEE | Rs.60 |</option>
+	<option value="25">MILK | Rs.25 |</option>
+</select>
+</center>
+</td></tr>
+<tr><td>
+<center>
+<input type="hidden" id="RsExtras" name="Extras" size="10">
+<select id="RsExtras" name="RsExtras" onchange="Extra(this)">
+	<option value="">-- SELECT --  -- Rs. --</option>
+	<option value="10">HOT | Rs.10 |</option>
+	<option value="05">COULD | Rs.5 |</option>
+        	<option value="01">MEDIUM | Rs.1 |</option>
+</select>
+</center>
+</td></tr>
+<tr><td>
+<center>
+<input type="hidden" id="RsQuantitys" name="Quantitys" size="10">
+<select id="RsQuantitys" name="RsQuantitys" onchange="Quantity(this)">
+	<option value="">-- SELECT --  -- 00 --</option>
+	<option value="01">| 1 | QUANTITY</option>
+	<option value="02">| 2 | QUANTITY</option>
+        	<option value="03">| 3 | QUANTITY</option>
+	<option value="04">| 4 | QUANTITY</option>
+	<option value="05">| 5 | QUANTITY</option>
+        	<option value="06">| 6 | QUANTITY</option>
+	<option value="07">| 7 | QUANTITY</option>
+	<option value="08">| 8 | QUANTITY</option>
+        	<option value="09">| 9 | QUANTITY</option>
+	<option value="10">| 10 | QUANTITY</option>
+</select>
+</center>
+</td>
+</tr>
+<tr>
+<td><hr color="White"></td>
+</tr>
+<tr>
+<td><center>YourBill Is:<input placeholder="Your Bill" type="text" id="bill" size="35" disabled></center></td>
+</tr>
+<tr>
+<td><hr color="White"></td>
+</tr>
+<tr>
+<td><center><button type="button" onclick="Totalis(this)">Get-Bill</button>
+<button type="reset">Clear</button></center></td>
+</tr>
+</table>
+</form>
+</body>
+</html>">
+        <form action="" method="">
+        <table align="center" bordercolor="white">
+        <tr><td><center>
+        <font color="white" size="10">
+        CafeCoffeDay
+        </font>
+        </center></td></tr>
+        <tr>
+        <td><hr color="White"></td>
+        </tr>
+        <tr><td>
+        <center>
+        <input type="hidden" id="RsTea" name="Tea" size="10">
+        <select id="RsTea" name="RsTea" onchange="Teas(this)">
+            <option value="">-- SELECT --  -- Rs.  --</option>
+            <option value="35">MASALA-TEA | Rs.35 |</option>
+                    <option value="50">BLACK-TEA | Rs.50 |</option>
+                    <option value="70">LAMON-TEA | Rs.70 |</option>
+                    <option value="65">GREEN-TEA | Rs.65 |</option>
+            <option value="60">COFFEE | Rs.60 |</option>
+            <option value="25">MILK | Rs.25 |</option>
+        </select>
+        </center>
+        </td></tr>
+        <tr><td>
+        <center>
+        <input type="hidden" id="RsExtras" name="Extras" size="10">
+        <select id="RsExtras" name="RsExtras" onchange="Extra(this)">
+            <option value="">-- SELECT --  -- Rs. --</option>
+            <option value="10">HOT | Rs.10 |</option>
+            <option value="05">COULD | Rs.5 |</option>
+                    <option value="01">MEDIUM | Rs.1 |</option>
+        </select>
+        </center>
+        </td></tr>
+        <tr><td>
+        <center>
+        <input type="hidden" id="RsQuantitys" name="Quantitys" size="10">
+        <select id="RsQuantitys" name="RsQuantitys" onchange="Quantity(this)">
+            <option value="">-- SELECT --  -- 00 --</option>
+            <option value="01">| 1 | QUANTITY</option>
+            <option value="02">| 2 | QUANTITY</option>
+                    <option value="03">| 3 | QUANTITY</option>
+            <option value="04">| 4 | QUANTITY</option>
+            <option value="05">| 5 | QUANTITY</option>
+                    <option value="06">| 6 | QUANTITY</option>
+            <option value="07">| 7 | QUANTITY</option>
+            <option value="08">| 8 | QUANTITY</option>
+                    <option value="09">| 9 | QUANTITY</option>
+            <option value="10">| 10 | QUANTITY</option>
+        </select>
+        </center>
+        </td>
+        </tr>              
+        <tr>
+        <td><hr color="White"></td>
+        </tr>
+        <tr>
+        <td><center>YourBill Is:<input placeholder="Your Bill" type="text" id="bill" size="35" disabled></center></td>
+        </tr>
+        <tr>
+        <td><hr color="White"></td>
+        </tr>
+        <tr>
+        <td><center><button type="button" onclick="Totalis(this)">Get-Bill</button>
+        <button type="reset">Clear</button></center></td>
+        </tr>
+        </table>
+        </form>
+        </body>
+        </html>
+    }
+}
